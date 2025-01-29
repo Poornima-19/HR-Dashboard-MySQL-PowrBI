@@ -25,7 +25,7 @@ WHERE age >= 18 AND termdate = '';
 
 SELECT 
 	CASE
-		WHEN age >= 18 AND age <= 24 THEN '18-24'
+	WHEN age >= 18 AND age <= 24 THEN '18-24'
         WHEN age >= 25 AND age <= 34 THEN '25-34'
         WHEN age >= 35 AND age <= 44 THEN '35-44'
         WHEN age >= 45 AND age <= 54 THEN '44-54'
