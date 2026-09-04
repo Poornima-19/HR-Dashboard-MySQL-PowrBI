@@ -1,120 +1,82 @@
-# HR Analytics Dashboard — MySQL & Power BI
+# 📊 HR Analytics Dashboard — MySQL + Power BI
 
-> **End-to-end HR analytics project** focused on workforce demographics, turnover, tenure, and employee trends.
+> **End-to-end HR analytics portfolio project** turning 22,000+ employee records into workforce insights and an interactive Power BI report.
 
-This project demonstrates how raw HR data can be transformed into business-ready insights using **SQL for data preparation and analysis** and **Power BI for visualization**.
+## 🎯 Business Problem
 
-## 🎯 Business Objective
+HR teams need a clear view of workforce composition, turnover, tenure, locations, and employee trends. This project uses SQL to prepare and analyze HR data, then Power BI to communicate the findings visually.
 
-Analyze workforce patterns and answer practical HR questions around:
+## 🔄 End-to-End Workflow
 
-- Workforce demographics
-- Age and gender distribution
-- Department and job-title composition
-- Employee location
-- Turnover
-- Employee tenure
-- Workforce changes over time
+`Raw HR Data → Data Quality Checks → SQL Cleaning → Business Questions → Analysis → Power BI Dashboard → Insights`
 
-## 🔄 Analytics Workflow
+## 🛠️ Tools
 
-`Raw HR Data → Data Cleaning → SQL Analysis → Business Insights → Power BI Dashboard`
-
-## 🛠️ Tools & Technologies
-
-| Technology | Application |
+| Tool | Role |
 |---|---|
-| **MySQL / MySQL Workbench** | Data cleaning and analysis |
-| **SQL** | Business questions, filtering, aggregation and workforce metrics |
-| **Power BI** | Interactive data visualization and dashboarding |
+| **MySQL / SQL** | Data cleaning, transformation, filtering and analysis |
+| **Power BI** | KPI design, interactive visualization and reporting |
 
 ## 📊 Dataset
 
-The project uses an HR dataset containing **22,000+ employee records covering 2000–2020**.
-
-The analysis includes employee attributes related to demographics, employment dates, departments, job titles, locations and termination information.
+The dataset contains **22,000+ employee records covering 2000–2020**, with attributes including demographics, employment dates, departments, job titles, locations and termination information.
 
 ## 🧹 Data Preparation
 
-The SQL cleaning process includes:
+- Created and loaded the HR database
+- Standardized employee and date fields
+- Converted dates into analysis-ready formats
+- Derived employee age
+- Identified invalid records
+- Handled negative-age records
+- Handled future termination dates
+- Prepared clean data for workforce analysis
 
-- Creating the database and employee table
-- Loading the source HR dataset
-- Standardizing employee and date fields
-- Converting date fields into usable formats
-- Deriving employee age
-- Identifying invalid records
-- Handling negative-age records
-- Handling future termination dates
-- Preparing clean data for workforce analysis
+## 🔎 Business Questions
 
-## 🔎 Key Business Questions
-
-The analysis investigates:
-
-1. What is the gender distribution of employees?
-2. What is the race/ethnicity distribution?
-3. How are employees distributed across age groups?
-4. How many employees work at headquarters versus remotely?
-5. What is the average employment length of terminated employees?
-6. How does gender vary across departments and job titles?
-7. Which job titles have the highest employee counts?
-8. Which departments have the highest turnover?
-9. How are employees distributed across locations/states?
-10. How has employee count changed over time?
-11. What is the average tenure by department?
+- How is the workforce distributed by gender, race/ethnicity and age?
+- How are employees distributed across departments and job titles?
+- How many employees work at headquarters versus remotely?
+- Which departments have the highest turnover?
+- What is the average employment length of terminated employees?
+- How are employees distributed geographically?
+- How has employee count changed over time?
+- What is the average tenure by department?
 
 ## 💡 Key Insights
 
 - Employees aged **25–34** form the largest age group, followed by **35–44**.
 - Headquarters employees outnumber remote employees.
 - Terminated employees have an average employment length of approximately **7 years**.
-- Overall employee gender distribution is male-dominant, while several departments show a relatively balanced mix.
+- Overall gender distribution is male-dominant, while several departments show a relatively balanced mix.
 - **Marketing** has the highest turnover rate, followed by **Training**.
 - **Ohio** has a large concentration of employees in the dataset.
 - Employee count shows a positive net change across the analyzed period.
 - Average departmental tenure is approximately **8 years**, with variation between departments.
 
-## 📈 Power BI Dashboard
+## 📈 Dashboard
 
-The Power BI component converts the SQL analysis into an easy-to-explore visual report covering:
+The Power BI report covers:
 
-- Workforce demographics
-- Age and gender analysis
-- Department and job-title distribution
-- Geographic distribution
-- Turnover analysis
-- Tenure analysis
-- Workforce trends over time
+**Workforce Demographics · Age & Gender · Departments · Job Titles · Geography · Turnover · Tenure · Workforce Trends**
 
-**Dashboard assets:**
+### Dashboard files
 
-- `HR Dashboard.pbix` — Power BI report
+- `HR Dashboard.pbix` — interactive Power BI report
 - `HR Dashboard.pdf` — PDF export
 
-## ⚠️ Data Quality & Limitations
+> 💡 **Portfolio improvement:** add a dashboard screenshot under `images/` and embed it here to give recruiters an immediate visual preview.
 
-The analysis documents important data-quality decisions:
+## ⚠️ Data Quality & Limitations
 
 - **967 records** with negative ages were excluded.
 - **1,599 records** with future termination dates were excluded from relevant termination analysis.
 - Workforce analysis focuses on employees aged **18 and above**.
-- Termination-based calculations use valid termination dates within the analysis period.
-
-These assumptions should be considered when interpreting the results.
+- Termination calculations use valid termination dates within the analysis period.
 
 ## 🧠 Skills Demonstrated
 
-- SQL data cleaning
-- Data validation
-- Data transformation
-- Exploratory data analysis
-- Aggregation and grouping
-- HR / workforce analytics
-- Business-question development
-- Power BI dashboard development
-- Data visualization
-- Insight communication
+`SQL` `MySQL` `Data Cleaning` `Data Validation` `EDA` `Aggregation` `HR Analytics` `Power BI` `Data Visualization` `Business Insights`
 
 ## 📁 Project Structure
 
@@ -127,10 +89,8 @@ HR-Dashboard-MySQL-PowrBI/
 └── README.md
 ```
 
-## 🚀 What This Project Demonstrates
+## 🚀 Why This Project Matters
 
-This project represents a complete analytics workflow rather than only a dashboard: **define business questions → clean and validate data → analyze with SQL → identify patterns → communicate findings visually**.
+This project demonstrates a complete analytics workflow: **define business questions → validate and clean data → analyze with SQL → identify patterns → communicate findings through a dashboard**.
 
----
-
-⭐ If you find this project useful, feel free to explore the SQL scripts and Power BI report.
+⭐ Explore the SQL scripts and Power BI report to see the complete workflow.
